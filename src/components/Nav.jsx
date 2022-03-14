@@ -5,7 +5,7 @@ const Nav =(props)=>{
     return(<React.Fragment>
         <h1>{props.datos.nombre}</h1>
         <ul>
-            <li>Home</li>
+            <li key={1}>Home</li>
             <li>Somos</li>
             <li>Contacto</li>
         </ul>
