@@ -5,20 +5,17 @@ import Veterinaria from './components/Veterinaria'
 import Perritos from './db/Perritos'
 import Children from './components/Children';
 import Keys from './components/Keys';
-
-function App(props) {
-
+import Peliculas from './components/clase8/db/Peliculas'
+import Principal from './components/clase8/ComponenteClase/Principal';
+function App() {
+console.log(Peliculas)
   return (
-    <div>
-     <Keys />
-     <Veterinaria perritos={Perritos}>
-      
-       <Children nombre="Juan"/>
-       <Children nombre="Luis"/>
-       <Children nombre="Pedro"/>
-      
-     </Veterinaria>
-    </div>
+    
+    
+  <Principal color="red" datos={{datos:Peliculas}}>
+
+  </Principal>
+    
   );
 }
 
